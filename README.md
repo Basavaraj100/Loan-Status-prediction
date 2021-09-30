@@ -42,7 +42,7 @@ def cred_score_imputation(cols):
 df['Credit Score']=df[['Credit Score','Loan Status']].agg(cred_score_imputation,axis=1)
 ```
 
-![image]()
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/missing_value_in_credit_score.PNG)
 
 ### Balancing the data
 - The target column(Loan status) was not balance , we used SMOTE technique to balance the frequency of categories in targte column
