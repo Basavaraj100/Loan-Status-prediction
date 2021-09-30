@@ -44,18 +44,23 @@ df['Credit Score']=df[['Credit Score','Loan Status']].agg(cred_score_imputation,
 
 ### Balancing the data
 - The target column(Loan status) was not balance , we used SMOTE technique to balance the frequency of categories in targte column
-![Before Balance]()
-![After balance]()
+- Credit score before cleaning
+
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/credit_score_before_cleaning.PNG)
+
+-Credit score after cleaning
+
+![After balance](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/credit_score_after_cleaning.PNG)
 
 
 ### model selection and workflow
 - We tried with each and every model to fit the data and to get bets accuarcy , and selected the best performer among all
 
-![Performance of each model]()
+![Performance of each model](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/model_performances.jpg)
 
 ### Feature selection
 - PermutationImportance technique used to select the best features, as the result 21 features are selected, using these fetures agin we build the model
-![Selected features are]()
+![Selected features are](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/selected_features.png)
 
 ### final model
 - XgBoost Classifier is the final model, which yield 85% accuracy with only 21 features among(41) features
@@ -63,10 +68,12 @@ df['Credit Score']=df[['Credit Score','Loan Status']].agg(cred_score_imputation,
 
 ## model performance
 - Confussion matrix
-![image]()
+
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/Confussion_matrix.png)
 
 -Classification report
-![image]()
+
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/classification_report.png)
 
 ## Model deployment
 - Model deployed in Google cloud platform using streamlit
@@ -98,9 +105,12 @@ env: flex
 This app contain following section
 
 1)Home: In this section you will find the description of problem statment and source for dataset
-2)EDA: This section agin divided into
--- A)Descriptive: Here description such as value counts, shape of the data...etc are described
--- B) Plots: Here Important plots used in EDA are mentioned
+
+2)EDA: This section agin divided into<br>
+
+    A)Descriptive: Here description such as value counts, shape of the data...etc are described<br>
+    B) Plots: Here Important plots used in EDA are mentioned<br>
+
 3)ML: In this section you can predict the loan status by entering the required features in the given fields
 
 App link: https://loan-status-prediction-326315.el.r.appspot.com/
