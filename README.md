@@ -110,7 +110,6 @@ This app contain following section
 1)Home: In this section you will find the description of problem statment and source for dataset
 
 2)EDA: This section agin divided into<br>
-
     A)Descriptive: Here description such as value counts, shape of the data...etc are described<br>
     B) Plots: Here Important plots used in EDA are mentioned<br>
 
