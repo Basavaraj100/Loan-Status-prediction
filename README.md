@@ -10,12 +10,14 @@ Loan status predicted by using machine learning classification algorithms. After
 ### Cleaning Credit score column
 - Credit score column contain 4 digit numbers also, after domain knowledge experty and google search we learnt that credit score should be three digit number only.
 - We observe that all four digit numbers ends with 0's so we simply drop the ending zero in four digit numbers
-<!-- credit score before cleaning -->
 
-![image]()
+- Credit score before cleaning
 
-<!-- credit score after cleaning -->
-![image]()
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/credit_score_before_cleaning.PNG)
+
+-Credit score after cleaning
+
+![After balance](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/credit_score_after_cleaning.PNG)
 
 ### Missing value treatment using statistical tests
 - For numerical features we checked that whther mean of numerical features is same for both categories of targte(Loan status)
@@ -45,12 +47,12 @@ df['Credit Score']=df[['Credit Score','Loan Status']].agg(cred_score_imputation,
 ### Balancing the data
 - The target column(Loan status) was not balance , we used SMOTE technique to balance the frequency of categories in targte column
 - Credit score before cleaning
+- Before SMOTE
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/before_balance.PNG)
 
-![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/credit_score_before_cleaning.PNG)
+- After SMOTE
 
--Credit score after cleaning
-
-![After balance](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/credit_score_after_cleaning.PNG)
+![image](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/after_balance.PNG)
 
 
 ### model selection and workflow
@@ -60,6 +62,7 @@ df['Credit Score']=df[['Credit Score','Loan Status']].agg(cred_score_imputation,
 
 ### Feature selection
 - PermutationImportance technique used to select the best features, as the result 21 features are selected, using these fetures agin we build the model
+
 ![Selected features are](https://github.com/Basavaraj100/Loan-Status-prediction/blob/main/images/selected_features.png)
 
 ### final model
